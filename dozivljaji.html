@@ -11,6 +11,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="preload" as="image" href="vrata-levo.jpg">
+<link rel="preload" as="image" href="vrata-desno.jpg">
 </head>
 <body>
 <!-- @header -->
@@ -49,7 +51,7 @@
 
 <main>
   <section class="hero page-hero">
-    <div class="hero-media"><img src="trpeza.jpg" alt="Trpeza sa domaćim jelima na drvenom stolu" data-i-alt="alt.table"></div>
+    <div class="ph-arch"><div class="ph-open"><div class="hero-media"><img src="trpeza.jpg" alt="Trpeza sa domaćim jelima na drvenom stolu" data-i-alt="alt.table"></div></div><span class="ph-stone" aria-hidden="true"></span></div>
     <div class="wrap hero-content">
       <span class="eyebrow" data-i="d.eyebrow">Doživljaji</span>
       <h1 data-i="d.title">Dan u pimnici, <em>veče uz vino</em></h1>
@@ -107,24 +109,49 @@
 
   <!-- jelovnik -->
   <section class="section" id="trpeza">
-    <div class="wrap split wide-left" style="align-items:start">
-      <div class="reveal">
-        <span class="eyebrow" data-i="d.m.eyebrow">Jelovnik</span>
-        <h2 data-i="d.m.title">Ukusi <em>bez prevoda</em></h2>
-        <p class="lead" data-i="d.m.lead">Spremanje hrane je poseban deo naše tradicije. Za mnoge naše specijalitete ne postoji prava reč u stranim jezicima, a ni ukus sa kojim bi se uporedili — zato je najbolje doći i probati.</p>
-        <div class="menu-list" style="margin-top: 36px">
-          <div class="menu-item"><h4 data-i="d.m1.t">Perić posluženje</h4><p data-i="d.m1.d">Hladan tanjir sa pečenicom, suvim mesom, dimljenom slaninom i domaćim sirom, čvarci, ajvar, ljutenica, kiseli krastavci i paprika, uz vino i rakiju po želji.</p></div>
-          <div class="menu-item"><h4 data-i="d.m2.t">Meze</h4><p data-i="d.m2.d">Pečenica, dimljena slanina, suvi vrat, pršuta, kulen i masline.</p></div>
-          <div class="menu-item"><h4 data-i="d.m3.t">Domaći sirevi</h4><p data-i="d.m3.d">Kravlji sir, mladi i stari, ovčji i kozji sir i kačkavalj.</p></div>
-          <div class="menu-item"><h4 data-i="d.m4.t">Tanjirača</h4><p data-i="d.m4.d">Mešano meso pečeno na tanjiraču — krmenadla, vrat, kobasica i vešalica — sa grilovanim povrćem.</p></div>
-          <div class="menu-item"><h4 data-i="d.m5.t">Pečurke na žaru</h4><p data-i="d.m5.d">Šampinjoni i sezonske pečurke sa žara.</p></div>
+    <div class="wrap">
+      <div class="split" style="align-items:end; margin-bottom: clamp(44px,5vw,72px)">
+        <div class="reveal">
+          <span class="eyebrow" data-i="d.m.eyebrow">Jelovnik</span>
+          <h2 data-i="d.m.title">Ukusi <em>bez prevoda</em></h2>
         </div>
+        <p class="lead reveal d1" data-i="d.m.lead">Spremanje hrane je poseban deo naše tradicije. Za mnoge naše specijalitete ne postoji prava reč u stranim jezicima, a ni ukus sa kojim bi se uporedili — zato je najbolje doći i probati.</p>
       </div>
-      <div class="reveal d1">
-        <div class="arch-frame"><div class="arch ratio-tall"><img src="jelo-tanjiraca.jpg" alt="Meso na tanjiraču iznad vatre" data-i-alt="alt.tanj" loading="lazy"></div></div>
-        <h4 style="margin-top: 36px" data-i="d.must">Morate probati</h4>
-        <div class="chips">
-          <span class="chip">Gibanica</span><span class="chip">Čvarci</span><span class="chip">Kajmak</span><span class="chip">Proja</span><span class="chip">Kačamak</span><span class="chip">Pršuta</span><span class="chip" data-i="d.roast">Pečenje</span>
+
+      <div class="menu-stage">
+        <figure class="menu-photo reveal">
+          <div class="arch-frame"><div class="arch menu-pics">
+            <img class="on" src="jelo-posluzenje.jpg" alt="Perić posluženje" loading="lazy">
+            <img src="jelo-meze.jpg" alt="Meze" loading="lazy">
+            <img src="jelo-sirevi.jpg" alt="Domaći sirevi" loading="lazy">
+            <img src="jelo-tanjiraca.jpg" alt="Tanjirača" data-i-alt="alt.tanj" loading="lazy">
+            <img src="jelo-pecurke.jpg" alt="Pečurke na žaru" loading="lazy">
+          </div></div>
+          <figcaption class="menu-photo-cap"><span class="mp-num">I</span><span class="mp-name">Perić posluženje</span></figcaption>
+        </figure>
+
+        <div class="menu-board">
+        <div class="menu-card reveal d1">
+          <header class="mc-head">
+            <svg viewBox="0 0 34 42" aria-hidden="true"><path d="M2.5 41V17a14.5 14.5 0 0 1 29 0v24" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M10.5 41V25.5a6.5 6.5 0 0 1 13 0V41Z" fill="#9B2D24"/><path d="M0 41.3h34" stroke="currentColor" stroke-width="1.4"/></svg>
+            <span class="mc-house">Pimnica Perić</span>
+            <span class="mc-title" data-i="d.m.eyebrow">Jelovnik</span>
+            <span class="mc-sub" data-i="logo.sub">Rajačke pimnice · 1887</span>
+          </header>
+          <div class="ornament"><i></i></div>
+          <ol class="mc-list">
+            <li class="mc-item on" tabindex="0"><div class="mc-line"><span class="mc-n">I</span><h4 data-i="d.m1.t">Perić posluženje</h4><span class="mc-dots"></span><span class="mc-pair" data-i="d.mp1">uz rakiju i vino</span></div><p data-i="d.m1.d">Hladan tanjir sa pečenicom, suvim mesom, dimljenom slaninom i domaćim sirom, čvarci, ajvar, ljutenica, kiseli krastavci i paprika, uz vino i rakiju po želji.</p></li>
+            <li class="mc-item" tabindex="0"><div class="mc-line"><span class="mc-n">II</span><h4 data-i="d.m2.t">Meze</h4><span class="mc-dots"></span><span class="mc-pair" data-i="d.mp2">uz Začinjak</span></div><p data-i="d.m2.d">Pečenica, dimljena slanina, suvi vrat, pršuta, kulen i masline.</p></li>
+            <li class="mc-item" tabindex="0"><div class="mc-line"><span class="mc-n">III</span><h4 data-i="d.m3.t">Domaći sirevi</h4><span class="mc-dots"></span><span class="mc-pair" data-i="d.mp3">uz Chardonnay</span></div><p data-i="d.m3.d">Kravlji sir, mladi i stari, ovčji i kozji sir i kačkavalj.</p></li>
+            <li class="mc-item" tabindex="0"><div class="mc-line"><span class="mc-n">IV</span><h4 data-i="d.m4.t">Tanjirača</h4><span class="mc-dots"></span><span class="mc-pair" data-i="d.mp4">uz Cabernet</span></div><p data-i="d.m4.d">Mešano meso pečeno na tanjiraču — krmenadla, vrat, kobasica i vešalica — sa grilovanim povrćem.</p></li>
+            <li class="mc-item" tabindex="0"><div class="mc-line"><span class="mc-n">V</span><h4 data-i="d.m5.t">Pečurke na žaru</h4><span class="mc-dots"></span><span class="mc-pair" data-i="d.mp4">uz Cabernet</span></div><p data-i="d.m5.d">Šampinjoni i sezonske pečurke sa žara.</p></li>
+          </ol>
+          <footer class="mc-foot">
+            <span class="mc-must" data-i="d.must">Morate probati</span>
+            <p class="mc-chips"><span>Gibanica</span><span>Čvarci</span><span>Kajmak</span><span>Proja</span><span>Kačamak</span><span>Pršuta</span><span data-i="d.roast">Pečenje</span></p>
+            <p class="mc-note" data-i="d.mc.note">Cene na upit · Za obrok se najavite unapred</p>
+          </footer>
+        </div>
         </div>
       </div>
     </div>
@@ -156,7 +183,7 @@
   </section>
 
   <!-- skupovi -->
-  <section class="section" id="skupovi">
+  <section class="section bg-night on-dark" id="skupovi">
     <div class="wrap">
       <div class="split" style="align-items:end; margin-bottom: clamp(44px,5vw,70px)">
         <div class="reveal">
@@ -222,7 +249,7 @@
   </section>
 
   <section class="section cta on-dark" id="rezervacija">
-    <div class="cta-bg"><img src="galerija-03.jpg" alt="" loading="lazy"></div>
+    <div class="cta-bg"><img src="galerija-03.jpg" alt="" loading="lazy" data-parallax=".15"></div>
     <div class="wrap cta-inner">
       <div class="reveal">
         <span class="eyebrow" data-i="r.eyebrow">Rezervacije</span>

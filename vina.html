@@ -11,6 +11,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="preload" as="image" href="vrata-levo.jpg">
+<link rel="preload" as="image" href="vrata-desno.jpg">
 </head>
 <body>
 <!-- @header -->
@@ -49,7 +51,7 @@
 
 <main>
   <section class="hero page-hero">
-    <div class="hero-media"><img src="galerija-10.jpg" alt="Stare boce vina u podrumu" data-i-alt="alt.bottles"></div>
+    <div class="ph-arch"><div class="ph-open"><div class="hero-media"><img src="galerija-10.jpg" alt="Stare boce vina u podrumu" data-i-alt="alt.bottles"></div></div><span class="ph-stone" aria-hidden="true"></span></div>
     <div class="wrap hero-content">
       <span class="eyebrow" data-i="v.eyebrow">Vina i rakije</span>
       <h1 data-i="v.title">Iz podruma <em>ukopanog u zemlju</em></h1>
@@ -83,6 +85,106 @@
     </div>
   </section>
 
+  <!-- vina: horizontalni skrol -->
+  <section class="wine-h on-dark" id="vina-lista">
+    <div class="wh-sticky">
+      <div class="wrap wh-head">
+        <div class="reveal">
+          <span class="eyebrow" data-i="v.l.eyebrow">Naša vina</span>
+          <h2 data-i="v.l.title">Pet vina, <em>pet priča</em></h2>
+        </div>
+        <nav class="wh-nav" aria-label="Vina"><a href="#tamjanika" class="on">Crna tamjanika</a><a href="#zacinjak">Začinjak</a><a href="#cabernet">Cabernet Sauvignon</a><a href="#chardonnay">Chardonnay</a><a href="#rizling" data-i="v.vr3">Rizling</a></nav>
+      </div>
+      <div class="wh-track">
+        <article class="wpanel" id="tamjanika" style="--wc:#7a1424">
+          <div class="wp-media"><div class="niche niche-lg"><img src="vino-tamjanika.png" alt="Boca crne tamjanike pimnice Perić"></div></div>
+          <div class="wp-body">
+            <span class="wp-num">01</span>
+            <div class="wine-meta"><span class="tag"><i class="dot"></i><span data-i="v.w1.tag">Crno · poluslatko</span></span><span class="tag native" data-i="v.native">Autohtona sorta</span></div>
+            <h3>Crna tamjanika</h3>
+            <p class="story" data-i="v.w1.d">Drevna, specifična muskatna sorta, retka u svetu. Postoje zapisi da se na ovim prostorima gajila još u srednjem veku. Izuzetno poluslatko vino neponovljivog ukusa, koje u našim krajevima ima gotovo mitski status.</p>
+            <div class="pairing"><b data-i="v.pair">Preporuka</b><p data-i="v.w1.p">Pije se samo, rashlađeno, kao aperitiv. Odlično se slaže sa slatkišima kao što su štrudle i pite.</p></div>
+          </div>
+        </article>
+        <article class="wpanel" id="zacinjak" style="--wc:#6e1020">
+          <div class="wp-media"><div class="niche niche-lg"><img src="vino-zacinjak.png" alt="Boca začinjka pimnice Perić"></div></div>
+          <div class="wp-body">
+            <span class="wp-num">02</span>
+            <div class="wine-meta"><span class="tag"><i class="dot"></i><span data-i="v.red">Crveno</span></span><span class="tag native" data-i="v.native">Autohtona sorta</span></div>
+            <h3>Začinjak</h3>
+            <p class="story" data-i="v.w2.d">Sorta koja je gotovo izumrla i koje, prema istraživanjima, još jedino ima u Negotinskoj regiji. Vino koje ćete uzalud tražiti u prodavnicama — prelepe boje i bukea.</p>
+            <div class="pairing"><b data-i="v.pair">Preporuka</b><p data-i="v.w2.p">Izuzetno pitko i osvežavajuće: uz crveno meso, pršut, šunku i jela pikantnog ukusa. Odlično ide uz fine masne zrele sireve.</p></div>
+          </div>
+        </article>
+        <article class="wpanel" id="cabernet" style="--wc:#5e0f1b">
+          <div class="wp-media"><div class="niche niche-lg"><img src="vino-cabernet.png" alt="Boca cabernet sauvignona pimnice Perić"></div></div>
+          <div class="wp-body">
+            <span class="wp-num">03</span>
+            <div class="wine-meta"><span class="tag"><i class="dot"></i><span data-i="v.red">Crveno</span></span></div>
+            <h3>Cabernet Sauvignon</h3>
+            <p class="story" data-i="v.w3.d">Sorta sa najvećim potencijalom za najkvalitetnija vina. Puno vino jarke rubin crvene boje, elegantnog mirisa i snažnog tela, sa aromama crnog voća i začina. Odlične strukture i velike svežine, zbog čega je izuzetno dopadljivo.</p>
+            <div class="pairing"><b data-i="v.pair">Preporuka</b><p data-i="v.w3.p">Uz pečenja, jagnjeća rebarca, mešano meso sa žara i hladna mesa. Lepo prati i divljač, pečurke i ovčji sir.</p></div>
+          </div>
+        </article>
+        <article class="wpanel" id="chardonnay" style="--wc:#b8963a">
+          <div class="wp-media"><div class="niche niche-lg"><img src="vino-chardonnay.png" alt="Boca chardonnaya pimnice Perić"></div></div>
+          <div class="wp-body">
+            <span class="wp-num">04</span>
+            <div class="wine-meta"><span class="tag"><i class="dot white"></i><span data-i="v.white">Belo</span></span></div>
+            <h3>Chardonnay</h3>
+            <p class="story" data-i="v.w4.d">Bogatstvo ukusa i vrhunski kvalitet. Vino slamnasto žute boje, izrazito aromatičnog mirisa i kompleksne punoće, sa blagim tonom gorčine u pozadini koji podseća na suvu smokvu i badem.</p>
+            <div class="pairing"><b data-i="v.pair">Preporuka</b><p data-i="v.w4.p">Uz morsku i rečnu ribu sa prelivima, ćuretinu, piletinu i svinjske specijalitete. Od sireva tvrdi i polutvrdi kačkavalj i kozji sir, od slatkiša voćni suvi kolači.</p></div>
+          </div>
+        </article>
+        <article class="wpanel" id="rizling" style="--wc:#c2ad4c">
+          <div class="wp-media"><div class="niche niche-lg"><img src="vino-rizling.png" alt="Boca rizlinga pimnice Perić"></div></div>
+          <div class="wp-body">
+            <span class="wp-num">05</span>
+            <div class="wine-meta"><span class="tag"><i class="dot white"></i><span data-i="v.white">Belo</span></span></div>
+            <h3 data-i="v.vr3">Rizling</h3>
+            <p class="story" data-i="v.w5.d">Harmonično i lepo balansirano belo vino kristalne bistrine i limun žute boje, sa aromama citrusa i svežih jabuka.</p>
+            <div class="pairing"><b data-i="v.pair">Preporuka</b><p data-i="v.w5.p">Uz hladna predjela, šunku, jela od belog mesa, belu ribu i tvrde sireve sa začinskim travama. Od slatkiša, kolač sa suvim voćem.</p></div>
+          </div>
+        </article>
+      </div>
+      <div class="wrap wh-foot" aria-hidden="true"><span class="wh-count"><b>01</b> / 05</span><span class="wh-progress"><i></i></span><span class="wh-hint" data-i="v.l.hint">Skrolujte</span></div>
+    </div>
+  </section>
+
+  <!-- rakije -->
+  <section class="section" id="rakije">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i="v.rk.eyebrow">Domaće rakije</span>
+        <h2 data-i="v.rk.title">Za dobrodošlicu <em>i za zdravlje</em></h2>
+        <p class="lead" data-i="v.rk.lead">Pečene na tradicionalan način, onako kako se u Krajini peku generacijama.</p>
+      </div>
+      <div class="rakija-grid">
+        <article class="rakija reveal">
+          <div class="niche"><img src="rakija-kruska.png" alt="Rakija od kruške" data-i-alt="alt.rk1" loading="lazy"></div>
+          <h3 data-i="v.rk1.n">Kruška</h3>
+          <span class="sub" data-i="v.rk1.s">Domaća rakija od kruške</span>
+          <p data-i="v.rk1.d">Vrhunska rakija finog mirisa i neodoljivog ukusa, elegantne arome i dobro izbalansirane jačine.</p>
+          <div class="pairing"><b data-i="v.pair">Preporuka</b><p data-i="v.rk1.p">Uz predjela, bela mesa sa prelivima, testenine, rižoto i rečnu ribu.</p></div>
+        </article>
+        <article class="rakija reveal d1">
+          <div class="niche"><img src="rakija-rajacki-plamen.png" alt="Rakija Rajački plamen" data-i-alt="alt.rk2" loading="lazy"></div>
+          <h3 data-i="v.rk2.n">Rajački plamen</h3>
+          <span class="sub" data-i="v.rk2.s">Domaća komova rakija</span>
+          <p data-i="v.rk2.d">Pečena tradicionalnom metodom od komine grožđa. U našim krajevima koristi se i kao narodni lek, za masažu kod visoke temperature, bolova i upale mišića.</p>
+          <div class="pairing"><b data-i="v.pair">Preporuka</b><p data-i="v.rk2.p">Kao aperitiv, uz predjela, mesne specijalitete, sireve i kiselu zimnicu.</p></div>
+        </article>
+        <article class="rakija reveal d2">
+          <div class="niche"><img src="rakija-komova.png" alt="Komova rakija u suvenir boci" data-i-alt="alt.rk3" loading="lazy"></div>
+          <h3 data-i="v.rk3.n">Komova rakija</h3>
+          <span class="sub" data-i="v.rk3.s">U suvenir boci</span>
+          <p data-i="v.rk3.d">Tradicionalna komovica u suvenir boci sa natpisom Pimnica Perić — lep poklon i uspomena na Rajac.</p>
+          <div class="pairing"><b data-i="v.pair">Preporuka</b><p data-i="v.rk2.p">Kao aperitiv, uz predjela, mesne specijalitete, sireve i kiselu zimnicu.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- vinski vodič -->
   <section class="section bg-night on-dark" id="vodic">
     <div class="wrap">
@@ -104,102 +206,6 @@
         <button type="button" data-dish="aperitiv" aria-pressed="false" data-i="v.f.o8">Aperitiv</button>
       </div>
       <div class="finder-result" aria-live="polite"></div>
-    </div>
-  </section>
-
-  <!-- vina -->
-  <section class="section bg-paper">
-    <div class="wrap">
-      <div class="section-head center reveal">
-        <span class="eyebrow center" data-i="v.l.eyebrow">Naša vina</span>
-        <h2 data-i="v.l.title">Pet vina, <em>pet priča</em></h2>
-      </div>
-
-      <div class="wine-list">
-        <article class="wine" id="tamjanika">
-          <div class="wine-media reveal"><div class="arch-frame"><div class="arch"><img src="vino-tamjanika.jpg" alt="Boca crne tamjanike pimnice Perić" loading="lazy"></div></div></div>
-          <div class="reveal d1">
-            <div class="wine-meta"><span class="tag"><i class="dot"></i><span data-i="v.w1.tag">Crno · poluslatko</span></span><span class="tag native" data-i="v.native">Autohtona sorta</span></div>
-            <h3>Crna tamjanika</h3>
-            <p class="story" data-i="v.w1.d">Drevna, specifična muskatna sorta, retka u svetu. Postoje zapisi da se na ovim prostorima gajila još u srednjem veku. Izuzetno poluslatko vino neponovljivog ukusa, koje u našim krajevima ima gotovo mitski status.</p>
-            <div class="pairing"><b data-i="v.pair">Preporuka</b><p data-i="v.w1.p">Pije se samo, rashlađeno, kao aperitiv. Odlično se slaže sa slatkišima kao što su štrudle i pite.</p></div>
-          </div>
-        </article>
-
-        <article class="wine" id="zacinjak">
-          <div class="wine-media reveal"><div class="arch-frame"><div class="arch"><img src="vino-zacinjak.jpg" alt="Boca začinjka pimnice Perić" loading="lazy"></div></div></div>
-          <div class="reveal d1">
-            <div class="wine-meta"><span class="tag"><i class="dot"></i><span data-i="v.red">Crveno</span></span><span class="tag native" data-i="v.native">Autohtona sorta</span></div>
-            <h3>Začinjak</h3>
-            <p class="story" data-i="v.w2.d">Sorta koja je gotovo izumrla i koje, prema istraživanjima, još jedino ima u Negotinskoj regiji. Vino koje ćete uzalud tražiti u prodavnicama — prelepe boje i bukea.</p>
-            <div class="pairing"><b data-i="v.pair">Preporuka</b><p data-i="v.w2.p">Izuzetno pitko i osvežavajuće: uz crveno meso, pršut, šunku i jela pikantnog ukusa. Odlično ide uz fine masne zrele sireve.</p></div>
-          </div>
-        </article>
-
-        <article class="wine" id="cabernet">
-          <div class="wine-media reveal"><div class="arch-frame"><div class="arch"><img src="vino-cabernet.jpg" alt="Boca cabernet sauvignona pimnice Perić" loading="lazy"></div></div></div>
-          <div class="reveal d1">
-            <div class="wine-meta"><span class="tag"><i class="dot"></i><span data-i="v.red">Crveno</span></span></div>
-            <h3>Cabernet Sauvignon</h3>
-            <p class="story" data-i="v.w3.d">Sorta sa najvećim potencijalom za najkvalitetnija vina. Puno vino jarke rubin crvene boje, elegantnog mirisa i snažnog tela, sa aromama crnog voća i začina. Odlične strukture i velike svežine, zbog čega je izuzetno dopadljivo.</p>
-            <div class="pairing"><b data-i="v.pair">Preporuka</b><p data-i="v.w3.p">Uz pečenja, jagnjeća rebarca, mešano meso sa žara i hladna mesa. Lepo prati i divljač, pečurke i ovčji sir.</p></div>
-          </div>
-        </article>
-
-        <article class="wine" id="chardonnay">
-          <div class="wine-media reveal"><div class="arch-frame"><div class="arch"><img src="vino-chardonnay.jpg" alt="Boca chardonnaya pimnice Perić" loading="lazy"></div></div></div>
-          <div class="reveal d1">
-            <div class="wine-meta"><span class="tag"><i class="dot white"></i><span data-i="v.white">Belo</span></span></div>
-            <h3>Chardonnay</h3>
-            <p class="story" data-i="v.w4.d">Bogatstvo ukusa i vrhunski kvalitet. Vino slamnasto žute boje, izrazito aromatičnog mirisa i kompleksne punoće, sa blagim tonom gorčine u pozadini koji podseća na suvu smokvu i badem.</p>
-            <div class="pairing"><b data-i="v.pair">Preporuka</b><p data-i="v.w4.p">Uz morsku i rečnu ribu sa prelivima, ćuretinu, piletinu i svinjske specijalitete. Od sireva tvrdi i polutvrdi kačkavalj i kozji sir, od slatkiša voćni suvi kolači.</p></div>
-          </div>
-        </article>
-
-        <article class="wine" id="rizling">
-          <div class="wine-media reveal"><div class="arch-frame"><div class="arch"><img src="vino-rizling.jpg" alt="Boca rizlinga pimnice Perić" loading="lazy"></div></div></div>
-          <div class="reveal d1">
-            <div class="wine-meta"><span class="tag"><i class="dot white"></i><span data-i="v.white">Belo</span></span></div>
-            <h3 data-i="v.vr3">Rizling</h3>
-            <p class="story" data-i="v.w5.d">Harmonično i lepo balansirano belo vino kristalne bistrine i limun žute boje, sa aromama citrusa i svežih jabuka.</p>
-            <div class="pairing"><b data-i="v.pair">Preporuka</b><p data-i="v.w5.p">Uz hladna predjela, šunku, jela od belog mesa, belu ribu i tvrde sireve sa začinskim travama. Od slatkiša, kolač sa suvim voćem.</p></div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- rakije -->
-  <section class="section" id="rakije">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow" data-i="v.rk.eyebrow">Domaće rakije</span>
-        <h2 data-i="v.rk.title">Za dobrodošlicu <em>i za zdravlje</em></h2>
-        <p class="lead" data-i="v.rk.lead">Pečene na tradicionalan način, onako kako se u Krajini peku generacijama.</p>
-      </div>
-      <div class="rakija-grid">
-        <article class="rakija reveal">
-          <div class="arch"><img src="rakija-kruska.jpg" alt="Rakija od kruške" data-i-alt="alt.rk1" loading="lazy"></div>
-          <h3 data-i="v.rk1.n">Kruška</h3>
-          <span class="sub" data-i="v.rk1.s">Domaća rakija od kruške</span>
-          <p data-i="v.rk1.d">Vrhunska rakija finog mirisa i neodoljivog ukusa, elegantne arome i dobro izbalansirane jačine.</p>
-          <div class="pairing"><b data-i="v.pair">Preporuka</b><p data-i="v.rk1.p">Uz predjela, bela mesa sa prelivima, testenine, rižoto i rečnu ribu.</p></div>
-        </article>
-        <article class="rakija reveal d1">
-          <div class="arch"><img src="rakija-rajacki-plamen.jpg" alt="Rakija Rajački plamen" data-i-alt="alt.rk2" loading="lazy"></div>
-          <h3 data-i="v.rk2.n">Rajački plamen</h3>
-          <span class="sub" data-i="v.rk2.s">Domaća komova rakija</span>
-          <p data-i="v.rk2.d">Pečena tradicionalnom metodom od komine grožđa. U našim krajevima koristi se i kao narodni lek, za masažu kod visoke temperature, bolova i upale mišića.</p>
-          <div class="pairing"><b data-i="v.pair">Preporuka</b><p data-i="v.rk2.p">Kao aperitiv, uz predjela, mesne specijalitete, sireve i kiselu zimnicu.</p></div>
-        </article>
-        <article class="rakija reveal d2">
-          <div class="arch"><img src="rakija-komova.jpg" alt="Komova rakija u suvenir boci" data-i-alt="alt.rk3" loading="lazy"></div>
-          <h3 data-i="v.rk3.n">Komova rakija</h3>
-          <span class="sub" data-i="v.rk3.s">U suvenir boci</span>
-          <p data-i="v.rk3.d">Tradicionalna komovica u suvenir boci sa natpisom Pimnica Perić — lep poklon i uspomena na Rajac.</p>
-          <div class="pairing"><b data-i="v.pair">Preporuka</b><p data-i="v.rk2.p">Kao aperitiv, uz predjela, mesne specijalitete, sireve i kiselu zimnicu.</p></div>
-        </article>
-      </div>
     </div>
   </section>
 
@@ -273,7 +279,7 @@
   </section>
 
   <section class="section cta on-dark" id="rezervacija">
-    <div class="cta-bg"><img src="galerija-15.jpg" alt="" loading="lazy"></div>
+    <div class="cta-bg"><img src="galerija-15.jpg" alt="" loading="lazy" data-parallax=".15"></div>
     <div class="wrap cta-inner">
       <div class="reveal">
         <span class="eyebrow" data-i="v.cta.eyebrow">Degustacija i porudžbine</span>

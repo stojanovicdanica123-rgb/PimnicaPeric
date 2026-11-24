@@ -11,6 +11,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="preload" as="image" href="vrata-levo.jpg">
+<link rel="preload" as="image" href="vrata-desno.jpg">
 </head>
 <body>
 <!-- @header -->
@@ -49,7 +51,7 @@
 
 <main>
   <section class="hero page-hero">
-    <div class="hero-media"><img src="sala-2.jpg" alt="Degustaciona sala sa kamenim zidovima" data-i-alt="alt.sala" style="object-position: center 60%"></div>
+    <div class="ph-arch"><div class="ph-open"><div class="hero-media"><img src="sala-2.jpg" alt="Degustaciona sala sa kamenim zidovima" data-i-alt="alt.sala" style="object-position: center 60%"></div></div><span class="ph-stone" aria-hidden="true"></span></div>
     <div class="wrap hero-content">
       <span class="eyebrow" data-i="st.eyebrow">Etno smeštaj Perić</span>
       <h1 data-i="st.title">Probudite se <em>u selu Rajac</em></h1>
@@ -88,8 +90,32 @@
         <h2 data-i="st.r.title">Izaberite <em>svoju sobu</em></h2>
         <p class="lead" data-i="st.r.lead">Dve dvokrevetne, dve trokrevetne i jedna četvorokrevetna soba. Dve sobe imaju sopstveno kupatilo.</p>
       </div>
+
+      <div class="planner reveal" id="planer">
+        <div class="pl-count">
+          <span class="pl-label" data-i="st.p.q">Koliko vas dolazi?</span>
+          <div class="pl-stepper">
+            <button type="button" class="pl-btn" data-step="-1" aria-label="−1">−</button>
+            <output class="pl-num" aria-live="polite">2</output>
+            <button type="button" class="pl-btn" data-step="1" aria-label="+1">+</button>
+          </div>
+          <div class="pl-seats" aria-hidden="true"></div>
+          <span class="pl-max" data-i="st.p.max">do 14 gostiju u 5 soba</span>
+        </div>
+        <div class="pl-result" aria-live="polite">
+          <span class="pl-label" data-i="st.p.r">Predlažemo</span>
+          <p class="pl-rooms">Soba 3</p>
+          <p class="pl-sum"></p>
+          <p class="pl-note" data-i="st.p.note">Predlog je okviran — konačan raspored dogovaramo zajedno, telefonom ili porukom.</p>
+        </div>
+        <div class="pl-actions">
+          <a class="btn" href="tel:+381641943065"><svg aria-hidden="true"><use href="icons.svg#phone"/></svg>064 1943 065</a>
+          <a class="btn btn-ghost" href="viber://chat?number=%2B381641943065"><svg aria-hidden="true"><use href="icons.svg#viber"/></svg>Viber</a>
+          <a class="btn btn-ghost" href="https://wa.me/381641943065" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="icons.svg#whatsapp"/></svg>WhatsApp</a>
+        </div>
+      </div>
       <div class="rooms">
-        <article class="room reveal">
+        <article class="room reveal" data-room="1" data-cap="3" data-own="1">
           <div class="img-card"><img src="soba-1.jpg" alt="Soba 1 sa kovanim krevetom i ćilimom" data-i-alt="alt.r1" loading="lazy"></div>
           <div class="room-body">
             <span class="room-num" data-i="st.type3">Trokrevetna soba</span>
@@ -102,7 +128,7 @@
             <div class="guests"><b>3</b><span data-i="st.guests">gosta</span></div>
           </div>
         </article>
-        <article class="room reveal d1">
+        <article class="room reveal d1" data-room="2" data-cap="4" data-own="1">
           <div class="img-card"><img src="soba-2.jpg" alt="Soba 2, četvorokrevetna" data-i-alt="alt.r2" loading="lazy"></div>
           <div class="room-body">
             <span class="room-num" data-i="st.type4">Četvorokrevetna soba</span>
@@ -115,7 +141,7 @@
             <div class="guests"><b>4</b><span data-i="st.guests">gosta</span></div>
           </div>
         </article>
-        <article class="room reveal d2">
+        <article class="room reveal d2" data-room="3" data-cap="2" data-own="0">
           <div class="img-card"><img src="soba-3.jpg" alt="Soba 3 sa narandžastim prekrivačem" data-i-alt="alt.r3" loading="lazy"></div>
           <div class="room-body">
             <span class="room-num" data-i="st.type2">Dvokrevetna soba</span>
@@ -128,7 +154,7 @@
             <div class="guests"><b>2</b><span data-i="st.guests">gosta</span></div>
           </div>
         </article>
-        <article class="room reveal">
+        <article class="room reveal" data-room="4" data-cap="2" data-own="0">
           <div class="img-card"><img src="soba-4.jpg" alt="Soba 4 sa dva velika kauča" data-i-alt="alt.r4" loading="lazy"></div>
           <div class="room-body">
             <span class="room-num" data-i="st.type2">Dvokrevetna soba</span>
@@ -141,7 +167,7 @@
             <div class="guests"><b>2</b><span data-i="st.guests">gosta</span></div>
           </div>
         </article>
-        <article class="room reveal d1">
+        <article class="room reveal d1" data-room="5" data-cap="3" data-own="0">
           <div class="img-card"><img src="soba-5.jpg" alt="Soba 5 sa crvenim prekrivačem" data-i-alt="alt.r5" loading="lazy"></div>
           <div class="room-body">
             <span class="room-num" data-i="st.type3">Trokrevetna soba</span>
@@ -171,7 +197,7 @@
   </section>
 
   <!-- zajednički prostori -->
-  <section class="section">
+  <section class="section bg-night on-dark">
     <div class="wrap">
       <div class="split wide-right" style="margin-bottom: clamp(50px,6vw,80px)">
         <div class="arch-frame reveal"><div class="arch ratio-portrait"><img src="sala-1.jpg" alt="Degustaciona sala" data-i-alt="alt.sala" loading="lazy"></div></div>
@@ -197,7 +223,7 @@
   </section>
 
   <section class="section cta on-dark" id="rezervacija">
-    <div class="cta-bg"><img src="pimnica-noc.jpg" alt="" loading="lazy"></div>
+    <div class="cta-bg"><img src="pimnica-noc.jpg" alt="" loading="lazy" data-parallax=".15"></div>
     <div class="wrap cta-inner">
       <div class="reveal">
         <span class="eyebrow" data-i="r.eyebrow">Rezervacije</span>
